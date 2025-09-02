@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "db:generate": "pnpm drizzle-kit generate",
-    "db:push": "pnpm drizzle-kit push"
+    "db:push": "pnpm drizzle-kit push",
+    "start": "node src/server.js --watch"
   },
   "keywords": [],
   "author": "",
