@@ -13,4 +13,5 @@ app.use("/students", studentRoutes);
 app.use("/courses", courseRoutes);
 app.use("/enrollments", enrollmentRoutes);
 
+
 export default app;

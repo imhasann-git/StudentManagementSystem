@@ -7,6 +7,8 @@ import {
   deleteStudentInfo,
 } from "../controllers/student.controller.js";
 
+import { getCoursesForStudent } from "../controllers/relation.controllers.js";
+
 const router = Router();
 
 // GET all students
@@ -23,5 +25,7 @@ router.put("/:id", updateStudentInfo); // full update
 
 // DELETE a student by ID
 router.delete("/:id", deleteStudentInfo);
+
+router.get("/:id/courses", getCoursesForStudent);
 
 export default router;
